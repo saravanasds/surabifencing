@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import logo from "../assets/home/logo.png";
+import logo1 from "../assets/home/logo1.png";
 import { Transition } from "@headlessui/react";
 import { FiMenu, FiX } from "react-icons/fi";
 
@@ -20,11 +21,16 @@ export default function Header() {
   return (
     <header className="w-full px-4 lg:px-20 pt-6 font-rubik bg-initial absolute z-[99999]">
       <nav className="flex justify-between items-center">
-        <div>
+        <div className="flex space-x-4">
           <a href="/">
             <img src={logo} className="w-36 cursor-pointer" alt="logo" />
           </a>
+
+          <a href="/">
+            <img src={logo1} className="w-36 cursor-pointer" alt="logo" />
+          </a>
         </div>
+
         <div className="hidden lg:block font-medium">
           <ul className="flex gap-6 items-center ">
             <li className="hover:text-[#FF4D30]">

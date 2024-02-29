@@ -2,7 +2,7 @@ import React from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
-import logo from "../assets/home/logo.png";
+import logo from "../assets/home/logo2.png";
 export default function Footer() {
   return (
     <div className="px-8 lg:px-20 py-20 mt-20 lg:mt-0">
@@ -57,7 +57,7 @@ Surabi Fencing proudly presents a diverse range of fencing options tailored to m
         </div>
       </div>
       <div className="flex justify-center items-center text center opacity-20">
-        <p>❤️ anup</p>
+        <p>❤️ ak</p>
       </div>
     </div>
   );

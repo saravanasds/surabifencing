@@ -32,7 +32,7 @@ export default function Hero() {
           </div>
         </div>
         <div className="w-full hidden lg:block pt-10">
-          <img src={home} alt="car" className="" />
+          <img src={home} alt="fence" className="" />
         </div>
       </div>
     </div>
