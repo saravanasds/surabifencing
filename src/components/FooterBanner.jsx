@@ -11,11 +11,11 @@ export default function FooterBanner() {
       }}
     >
       <h2 className=" text-3xl lg:text-[2.4rem] font-extrabold leading-[2.7rem]">
-        Book a car by getting in touch with us
+        connect with us
       </h2>
       <span className="text-[#FF4D30] font-bold text-2xl lg:text-[2.4rem] flex items-center gap-2">
         <FaPhoneAlt />
-        +91-9463836278
+        +91-8668006976
       </span>
     </div>
   );

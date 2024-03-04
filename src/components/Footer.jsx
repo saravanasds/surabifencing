@@ -20,7 +20,7 @@ Surabi Fencing proudly presents a diverse range of fencing options tailored to m
           </a>
           <a href="/" className="flex items-center gap-2 hover:text-[#FF4D30]">
             <MdEmail />
-            <p>contact@carrental.com</p>
+            <p>contact@surabifencing.com</p>
           </a>
         </div>
         <div className="flex flex-col gap-4 items-center lg:items-start">

@@ -13,7 +13,7 @@ export default function Testimonials() {
           opacity: "0.1", // Set the opacity value here (0.1 for 10%)
         }}
       ></div>
-      <div className="flex lg:flex-row px-8 lg:px-20 py-32 text-black relative z-10">
+      <div className="flex lg:flex-row px-8 lg:px-20 py-40 text-black relative z-10">
         <div>
           <h2 className="text-3xl font-bold">Testimonials</h2>
           <h3 className="text-lg font-semibold">Home/Testimonials</h3>

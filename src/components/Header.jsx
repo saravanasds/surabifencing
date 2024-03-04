@@ -40,7 +40,7 @@ export default function Header() {
               <Link to="/about">About</Link>
             </li>
             <li className="hover:text-[#FF4D30]">
-              <Link to="/">Products</Link>
+              <Link to="/vehical-models">Products</Link>
             </li>
             <li className="hover:text-[#FF4D30]">
               <Link to="/testimonials">Testimonials</Link>
@@ -55,10 +55,9 @@ export default function Header() {
         </div>
         <div className="flex gap-6 items-center font-medium">
           <a href="/" className="hidden lg:block hover:text-[#FF4D30]">
-            Sign in
           </a>
-          <button className="rounded py-3 px-6 bg-[#FF4D30] text-white shadow-custom hover:shadow-custom-hovered transition-all duration-300 ease-in-out hidden lg:block">
-            Register
+          {/* <button className="rounded py-3 px-6 bg-[#FF4D30] text-white shadow-custom hover:shadow-custom-hovered transition-all duration-300 ease-in-out hidden lg:block">
+            
           </button>
           <button
             type="button"
@@ -66,7 +65,7 @@ export default function Header() {
             className="lg:hidden text-slate-700 font-semibold text-2xl cursor-pointer hover:text-yellow-500"
           >
             {isMenuOpen ? <FiX /> : <FiMenu />}
-          </button>
+          </button> */}
         </div>
       </nav>
       <Transition
