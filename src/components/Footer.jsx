@@ -13,14 +13,14 @@ export default function Footer() {
           </a>
           <p className="text-wrap w-72 pb-4 text-[#706F7B] font-rubik">
             
-Surabi Fencing proudly presents a diverse range of fencing options tailored to meet your specific needs. Discover the perfect solution for your property.
+Surabhi Fencing proudly presents a diverse range of fencing options tailored to meet your specific needs. Discover the perfect solution for your property.
           </p>
           <a href="/" className="flex items-center gap-2 hover:text-[#FF4D30]">
             <FaPhoneAlt /> <p>+91-8668006976</p><p>+91-9042506976</p>
           </a>
           <a href="/" className="flex items-center gap-2 hover:text-[#FF4D30]">
             <MdEmail />
-            <p>contact@surabifencing.com</p>
+            <p>contact@Surabhifencing.com</p>
           </a>
         </div>
         <div className="flex flex-col gap-4 items-center lg:items-start">

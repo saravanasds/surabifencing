@@ -29,12 +29,12 @@ export default function About() {
           <img src={main} alt="" className="rounded-lg shadow-xl" />
         </div>
         <div className="flex flex-col lg:text-start text-center w-full lg:w-[40%]">
-          <h3 className="text-2xl font-semibold">About Surabi Fencing</h3>
+          <h3 className="text-2xl font-semibold">About Surabhi Fencing</h3>
           <h4 className="text-[2.7rem] font-bold py-4 leading-[3rem]">
             Your Protections Begins Here
           </h4>
           <p className="text-[#706F7B] lg:text-left text-center">
-            Feel the confidence in every fence with Surabi Fencing. We're not just building barriers; we're crafting stories of quality and reliability. Join us in discovering the simplicity and strength that defines our fencing solutions.
+            Feel the confidence in every fence with Surabhi Fencing. We're not just building barriers; we're crafting stories of quality and reliability. Join us in discovering the simplicity and strength that defines our fencing solutions.
           </p>
           <div className="flex lg:justify-start justify-center items-center gap-10">
             <div>

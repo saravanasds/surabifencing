@@ -35,7 +35,7 @@ export default function Contact() {
             Need additional information?
           </h3>
           <p className="text-[#706F7B] font-rubik text-center lg:text-left pr:0 lg:pr-52">
-            An all-around expert in Surabi Fencing, skilled in research, development, and specialized know-how. With a solid background, we bring over 15 years of experience.
+            An all-around expert in Surabhi Fencing, skilled in research, development, and specialized know-how. With a solid background, we bring over 15 years of experience.
           </p>
           <div className="flex flex-col justify-center items-center lg:items-start lg:justify-start">
             <a
@@ -49,7 +49,7 @@ export default function Contact() {
               className="flex items-center gap-2 hover:text-[#FF4D30]"
             >
               <MdEmail />
-              <p>contact@surabifencing.com</p>
+              <p>contact@Surabhifencing.com</p>
             </a>
           </div>
         </div>

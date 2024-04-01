@@ -25,19 +25,19 @@ export default function Testimonial() {
         </div>
         <div className="flex lg:flex-row flex-col gap-10 pt-10 lg:pt-0">
           <TestimonialCard
-            content='"We had an outstanding experience with Surabi Fencing for our project. The rates offered were very reasonable, making the entire engagement highly satisfactory."'
+            content='"We had an outstanding experience with Surabhi Fencing for our project. The rates offered were very reasonable, making the entire engagement highly satisfactory."'
             img={image1}
             name="Swarup"
             city="Kolkata, India"
           />
           <TestimonialCard
-            content='"The fencing materials from Surabi Fencing were in excellent condition and significantly enhanced the overall aesthetics of our property."'
+            content='"The fencing materials from Surabhi Fencing were in excellent condition and significantly enhanced the overall aesthetics of our property."'
             img={image2}
             name="Arpita"
             city="Bengaluru, India"
           />
           <TestimonialCard
-            content='"Our experience with Surabi Fencing has been nothing short of exceptional, and we wholeheartedly recommend them for their top-notch materials and impeccable service."'
+            content='"Our experience with Surabhi Fencing has been nothing short of exceptional, and we wholeheartedly recommend them for their top-notch materials and impeccable service."'
             img={image3}
             name="Rani"
             city="Hydrabad, India"
