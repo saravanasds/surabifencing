@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { CAR_DATA } from "./CarData.js";
+import { CAR_DATA } from "./CarData2.js";
+
+import { FaIndianRupeeSign } from "react-icons/fa6";
 
 export default function VehicleModels() {
   const [selectedCar, setSelectedCar] = useState(null);
@@ -14,30 +16,35 @@ export default function VehicleModels() {
   };
 
   return (
-    <div className="w-full px-8 lg:px-20 pt-6 py:10 lg:py-20 flex-wrap">
-      <div className="flex flex-col justify-center items-center pb-20">
-        <h3 className="text-2xl font-semibold">Vehicle Models</h3>
-        <h4 className="text-[2.7rem] font-bold py-4 text-center">Our rental fleet</h4>
-        <p className="text-[#706F7B] px-6 lg:px-96 text-center">
-          Choose from a variety of our amazing vehicles to rent for your next
-          adventure or business trip
-        </p>
+    <div className="w-full px-8 lg:px-20 pt-6 py:10 lg:py-20 flex-wrap bg-gray-200">
+      <div className="flex flex-col justify-center items-center pb-10">
+        <h3 className="text-2xl font-semibold" >Safety begins here</h3>
+        <h4 className="text-[2.7rem] font-extrabold py-4 text-center" style={{ backgroundImage: '-webkit-linear-gradient(yellow, red)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Our Products</h4>
+        <p className="text-black px-6 lg:px-96 text-center">
+          Choose from a variety of our Products for your safety and for your welfare </p>
       </div>
-      <div className="flex flex-col lg:flex-row lg:justify-between gap-10 justify-center lg:items-start items-center">
-        <div className="flex flex-col gap-2 lg:w-[20%] w-full">
+
+      {/* New Tab */}
+      
+
+      {/* products click details */}
+      <div className="flex flex-col lg:flex-row lg:justify-between h-[450px] gap-10 lg:items-start items-center" id="product-section">
+        
+        {/* section1 */}
+        <div className="flex flex-col justify-between h-full ml-5 lg-full lg:w-[20%] w-full">
           {CAR_DATA.map((carGroup, index) => (
             <div key={index}>
               {carGroup.map((car) => (
                 <div
                   key={car.name}
                   onClick={() => handleClick(car)}
-                  className={` hover:bg-[#FF4D30] cursor-pointer ${
+                  className={` hover:bg-[#e0ff30] hover:text-black px-6 py-4 cursor-pointer   ${
                     selectedCar === car
-                      ? "bg-[#FF4D30] text-white"
-                      : "bg-[#e9e9e9] text-black"
+                      ? "bg-[#e0ff30] text-black"
+                      : "bg-[#888181] text-white"
                   }`}
                 >
-                  <button className="px-6 py-4 text-lg font-semibold">
+                  <button className=" text-lg font-semibold w-full">
                     {car.name}
                   </button>
                 </div>
@@ -45,73 +52,49 @@ export default function VehicleModels() {
             </div>
           ))}
         </div>
-        <div>
+
+        {/* section2 */}
+        <div className="lg:w-[60%] h-full ">
           {selectedCar && (
             <img
               src={selectedCar.img}
               alt={selectedCar.name}
-              className="pt-12"
+              className="object-cover h-full rounded-md"
             />
           )}
         </div>
-        <div className="text-sm text-center w-full lg:w-[20%] h-64">
+
+        {/* section3 */}
+        <div className="text-sm  text-center w-full lg:w-[20%] ">
           {selectedCar && (
-            <div className="text-center border border-black">
-              <div className="flex bg-[#FF4D30] text-white items-center justify-center py-4">
-                <p className="text-3xl font-bold">
-                  ${selectedCar.price}
-                  <span className="text-lg font-normal">/ rent per day</span>
+            <div className="flex flex-col justify-between text-center border border-black h-[450px]">
+              <div className="flex flex-col gap-2 text-black items-center justify-center">
+                <p className="text-3xl font-bold bg-[#e0ff30]  w-full py-3">
+                  <FaIndianRupeeSign className="inline"/>{selectedCar.price}
+                  <span className="text-lg font-normal">/ per feet</span>
                 </p>
+                <div className="bg-[#e0ff30] text-black w-full text-xl font-bold py-3 uppercase">Fence Description</div>
               </div>
 
-              <div className="flex py-2 px-2 border-b border-black">
-                <span className=" w-1/3">Model</span>
-                <span className="w-2/3 border-l border-black">
-                  {selectedCar.model}
-                </span>
+              {/* model */}
+              <div className="flex flex-col p-2 italic text-base ">
+                <div className="">
+                  {selectedCar.des}
+                </div>
               </div>
-              <div className="flex py-2 px-2 border-b border-black">
-                <span className=" w-1/3">Mark</span>
-                <span className="w-2/3  border-l border-black">
-                  {selectedCar.mark}
-                </span>
-              </div>
-              <div className="flex py-2 px-2 border-b border-black">
-                <span className=" w-1/3">Year</span>
-                <span className="w-2/3  border-l border-black">
-                  {selectedCar.year}
-                </span>
-              </div>
-              <div className="flex py-2 px-2 border-b border-black">
-                <span className=" w-1/3">Doors</span>
-                <span className="w-2/3  border-l border-black">
-                  {selectedCar.doors}
-                </span>
-              </div>
-              <div className="flex py-2 px-2 border-b border-black">
-                <span className=" w-1/3">AC</span>
-                <span className="w-2/3  border-l border-black">
-                  {selectedCar.air}
-                </span>
-              </div>
-              <div className="flex py-2 px-2 border-b border-black">
-                <span className=" w-1/3 ">Carrying</span>
-                <span className="w-2/3  border-l border-black">
-                  {selectedCar.transmission}
-                </span>
-              </div>
-              <div className="flex py-2 px-2">
-                <span className=" w-1/3  ">Fuel</span>
-                <span className="w-2/3 border-l border-black">
-                  {selectedCar.fuel}
-                </span>
-              </div>
-            </div>
-          )}
-          <button className="w-full uppercase bg-[#FF4D30] text-white px-[2.5rem] py-3 mt-4 text-xl font-semibold hover:bg-opacity-95 shadow-custom hover:shadow-custom-hovered transition-all duration-300 ease-in-out">
+
+                <button className="w-full uppercase bg-[#e0ff30] text-black px-[2.5rem] py-3 mt-4 text-xl font-semibold hover:bg-opacity-95 shadow-custom hover:shadow-custom-hovered transition-all duration-300 ease-in-out">
             Reserve Now
           </button>
+              
+
+
+            </div>
+          )}
+          
         </div>
+
+
       </div>
     </div>
   );

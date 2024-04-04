@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
-import logo from "../assets/home/logo.png";
-import logo1 from "../assets/home/logo1.png";
 import { Transition } from "@headlessui/react";
 import { FiMenu, FiX } from "react-icons/fi";
+
+import logo from "../assets/home/logo.png";
+import logo1 from "../assets/home/logo1.png";
+
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,8 +21,11 @@ export default function Header() {
   }
 
   return (
-    <header className="w-full px-4 lg:px-20 pt-6 font-rubik bg-initial absolute z-[99999]">
-      <nav className="flex justify-between items-center">
+    <header className="w-full px-4 lg:px-20 pt-6 font-rubik bg-initial absolute bg-white bg-opacity-20 backdrop-blur-md backdrop-filter backdrop-blur-md p-4 rounded-md shadow-lg">
+      
+      <nav className="flex justify-between items-center ">
+
+        {/* logos */}
         <div className="flex space-x-4">
           <a href="/">
             <img src={logo} className="w-36 cursor-pointer" alt="logo" />
@@ -31,9 +36,10 @@ export default function Header() {
           </a>
         </div>
 
-        <div className="hidden lg:block font-medium">
-          <ul className="flex gap-6 items-center ">
-            <li className="hover:text-[#FF4D30]">
+        {/* navbar */}
+        <div className="hidden lg:block font-medium"> 
+          <ul className="flex gap-6 items-center text-2xl ">
+            <li className="hover:text-[#FF4D30] ">
               <Link to="/">Home</Link>
             </li>
             <li className="hover:text-[#FF4D30]">
@@ -53,21 +59,20 @@ export default function Header() {
             </li>
           </ul>
         </div>
+
+
         <div className="flex gap-6 items-center font-medium">
-          <a href="/" className="hidden lg:block hover:text-[#FF4D30]">
-          </a>
-          {/* <button className="rounded py-3 px-6 bg-[#FF4D30] text-white shadow-custom hover:shadow-custom-hovered transition-all duration-300 ease-in-out hidden lg:block">
-            
-          </button>
           <button
             type="button"
             onClick={toggleMenu}
-            className="lg:hidden text-slate-700 font-semibold text-2xl cursor-pointer hover:text-yellow-500"
+            className="lg:hidden text-red-900 font-bold text-4xl cursor-pointer hover:text-yellow-500 pr-5 "
           >
             {isMenuOpen ? <FiX /> : <FiMenu />}
-          </button> */}
+          </button>
         </div>
       </nav>
+
+
       <Transition
         show={isMenuOpen}
         enter="transition-opacity duration-300"
@@ -78,42 +83,41 @@ export default function Header() {
         leaveTo="opacity-0"
       >
         {(ref) => (
-          <div
-            ref={ref}
-            className="flex flex-col gap-6 w-full h-[100vh] fixed top-0 right-0 p-14 rounded-b-md bg-white shadow-md lg:hidden text-center font-medium"
+          <div ref={ref}
+            className="flex flex-col gap-6 w-3/4 h-[100vh] fixed top-0 left-0 lg:p-14 p-3 rounded-b-md bg-green-700 backdrop-blur-sm shadow-md lg:hidden text-center font-medium"
           >
             <div
-              className="border rounded px-10 py-4 hover:text-[#FF4D30] hover:-translate-y-2 ease-in-out duration-300 cursor-pointer"
+              className="border rounded px-10 py-4 text-xl font-bold hover:text-[#30ff75] hover:bg-gray-800 hover:-translate-y-2 ease-in-out duration-300 cursor-pointer"
               onClick={handleLinkClick}
             >
               <Link to="/">Home</Link>
             </div>
             <div
-              className="border  rounded px-10 py-4 hover:text-[#FF4D30] hover:-translate-y-2 ease-in-out duration-300 cursor-pointer"
+              className="border  rounded px-10 py-4 text-xl font-bold hover:text-[#30ff75] hover:bg-gray-800 hover:-translate-y-2 ease-in-out duration-300 cursor-pointer"
               onClick={handleLinkClick}
             >
               <Link to="/about">About</Link>
             </div>
             <div
-              className="border  rounded px-10 py-4 hover:text-[#FF4D30] hover:-translate-y-2 ease-in-out duration-300 cursor-pointer"
+              className="border  rounded px-10 py-4 text-xl font-bold hover:text-[#30ff75] hover:bg-gray-800 hover:-translate-y-2 ease-in-out duration-300 cursor-pointer"
               onClick={handleLinkClick}
             >
               <Link to="/">Products</Link>
             </div>
             <div
-              className="border  rounded px-10 py-4 hover:text-[#FF4D30] hover:-translate-y-2 ease-in-out duration-300 cursor-pointer"
+              className="border  rounded px-10 py-4 text-xl font-bold hover:text-[#30ff75] hover:bg-gray-800 hover:-translate-y-2 ease-in-out duration-300 cursor-pointer"
               onClick={handleLinkClick}
             >
               <Link to="/testimonials">Testimonial</Link>
             </div>
             <div
-              className="border  rounded px-10 py-4 hover:text-[#FF4D30] hover:-translate-y-2 ease-in-out duration-300 cursor-pointer"
+              className="border  rounded px-10 py-4 text-xl font-bold hover:text-[#30ff75] hover:bg-gray-800 hover:-translate-y-2 ease-in-out duration-300 cursor-pointer"
               onClick={handleLinkClick}
             >
               <Link to="/">Gallery</Link>
             </div>
             <div
-              className="border rounded px-10 py-4 hover:text-[#FF4D30] hover:-translate-y-2 ease-in-out duration-300 cursor-pointer"
+              className="border rounded px-10 py-4 text-xl font-bold hover:text-[#30ff75] hover:bg-gray-800 hover:-translate-y-2 ease-in-out duration-300 cursor-pointer"
               onClick={handleLinkClick}
             >
               <Link to="/contact">Contact</Link>
@@ -121,6 +125,8 @@ export default function Header() {
           </div>
         )}
       </Transition>
+
+
       <Outlet />
     </header>
   );

@@ -1,40 +1,44 @@
 import React from "react";
-import bgAbout from "../assets/hero/heroes-bg.png";
+import bgAbout from "../assets/fences/fence1.jpg";
 import FooterBanner from "../components/FooterBanner.jsx";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import bgContact from "../assets/banners/bg-contact.png";
 import { SiMinutemailer } from "react-icons/si";
+import Header from "../components/Header.jsx";
 
 export default function Contact() {
   return (
     <div className="font-poppins w-full h-full relative">
-      <div className="font-poppins relative flex flex-col gap-10">
-        <div
-          className="bg-no-repeat w-full h-full bg-top absolute"
-          style={{
-            backgroundImage: `url(${bgAbout})`,
-            opacity: "0.1",
-          }}
-        ></div>
-        <div className="flex lg:flex-row px-8 lg:px-20 py-40 text-black relative z-10">
-          <div>
-            <h2 className="text-3xl font-bold">Contact</h2>
-            <h3 className="text-lg font-semibold">Home/Contact</h3>
-          </div>
+      <div
+        className="bg-no-repeat w-full h-[300px] lg:[400px] bg-top "
+        style={{
+          backgroundImage: `url(${bgAbout})`,
+          // opacity: "0.3",
+          backgroundPosition:"center",
+            objectFit:"cover", // Set the opacity value here (0.1 for 10%)
+        }}
+      >
+        <div className=" z-20"><Header/></div>
+      <div className="flex lg:flex-row px-8 lg:px-20 py-40 text-black  z-10">
+        <div>
+          <h2 className="text-3xl font-bold pt-9" style={{ backgroundImage: '-webkit-linear-gradient(yellow, red)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Contact us</h2>
+          <h3 className="text-lg font-semibold">Home/ Contact us</h3>
         </div>
       </div>
+      </div>
+
       <div
-        className="flex lg:flex-row flex-col flex-wrap gap-10 items-start justify-between px-8 lg:px-36 py-20 text-black bg-no-repeat bg-center bg-fixed"
+        className="flex lg:flex-row flex-col flex-wrap gap-10 items-start bg-slate-500 justify-between px-8 lg:px-36 py-20 text-black bg-no-repeat bg-center bg-fixed"
         style={{
           backgroundImage: `url(${bgContact})`,
         }}
       >
         <div className="lg:w-[50%] w-full  flex flex-col gap-10 lg:text-left text-center">
-          <h3 className="text-[2.7rem] font-bold">
+          <h3 className="text-[2.7rem] font-bold" style={{ backgroundImage: '-webkit-linear-gradient(yellow, red)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
             Need additional information?
           </h3>
-          <p className="text-[#706F7B] font-rubik text-center lg:text-left pr:0 lg:pr-52">
+          <p className="text-black font-rubik text-center lg:text-left pr:0 lg:pr-52">
             An all-around expert in Surabhi Fencing, skilled in research, development, and specialized know-how. With a solid background, we bring over 15 years of experience.
           </p>
           <div className="flex flex-col justify-center items-center lg:items-start lg:justify-start">

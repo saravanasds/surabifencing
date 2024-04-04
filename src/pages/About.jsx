@@ -1,10 +1,13 @@
 import React from "react";
-import bgAbout from "../assets/hero/heroes-bg.png";
+import bgAbout from "../assets/fences/fence1.jpg";
 import main from "../assets/about/about-main.jpg";
 import icon1 from "../assets/about/icon1.png";
 import icon2 from "../assets/about/icon2.png";
 import icon3 from "../assets/about/icon3.png";
 import Feature from "../components/Feature";
+import Header from "../components/Header.jsx";
+
+import FooterBanner from "../components/FooterBanner.jsx";
 import { FaPhoneAlt } from "react-icons/fa";
 import bgBanner from "../assets/banners/book-banner.png"
 
@@ -12,32 +15,37 @@ export default function About() {
   return (
     <div className="font-poppins relative flex flex-col gap-10">
       <div
-        className="bg-no-repeat w-full h-full bg-top absolute"
+        className="bg-no-repeat w-full h-[300px] lg:[400px] bg-top "
         style={{
           backgroundImage: `url(${bgAbout})`,
-          opacity: "0.15", // Set the opacity value here (0.1 for 10%)
+          // opacity: "0.3",
+          backgroundPosition:"center",
+            objectFit:"cover", // Set the opacity value here (0.1 for 10%)
         }}
-      ></div>
-      <div className="flex lg:flex-row px-8 lg:px-20 py-40 text-black relative z-10">
+      >
+        <div className=" z-20"><Header/></div>
+      <div className="flex lg:flex-row px-8 lg:px-20 py-40 text-black  z-10">
         <div>
-          <h2 className="text-3xl font-bold">About</h2>
-          <h3 className="text-lg font-semibold">Home/About</h3>
+          <h2 className="text-3xl font-bold pt-9">About</h2>
+          <h3 className="text-lg font-semibold">Home/ About</h3>
         </div>
       </div>
-      <div className="flex gap-10 flex-col lg:flex-row items-center justify-center px-8 lg:px-20 pt-48 text-black ">
+      </div>
+      
+      <div className="flex gap-10 flex-col lg:flex-row items-center justify-center px-8 lg:px-20 pt-20 text-black bg-grey-100">
         <div>
           <img src={main} alt="" className="rounded-lg shadow-xl" />
         </div>
         <div className="flex flex-col lg:text-start text-center w-full lg:w-[40%]">
-          <h3 className="text-2xl font-semibold">About Surabhi Fencing</h3>
-          <h4 className="text-[2.7rem] font-bold py-4 leading-[3rem]">
+          <h3 className="text-2xl font-semibold" >About Surabhi Fencing</h3>
+          <h4 className="text-[2.7rem] font-bold py-4 leading-[3rem]" style={{ backgroundImage: '-webkit-linear-gradient(yellow, red)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
             Your Protections Begins Here
           </h4>
-          <p className="text-[#706F7B] lg:text-left text-center">
+          <p className="text-black lg:text-left text-center">
             Feel the confidence in every fence with Surabhi Fencing. We're not just building barriers; we're crafting stories of quality and reliability. Join us in discovering the simplicity and strength that defines our fencing solutions.
           </p>
           <div className="flex lg:justify-start justify-center items-center gap-10">
-            <div>
+            {/* <div>
               <img className="py-6" src={icon1} alt="" />
               <div className="flex gap-4 items-center font-rubik">
                 <span className="text-3xl font-bold">20</span>
@@ -47,8 +55,8 @@ export default function About() {
                   Types
                 </p>
               </div>
-            </div>
-            <div>
+            </div> */}
+            {/* <div>
               <img className="py-6" src={icon2} alt="" />
               <div className="flex gap-4 items-center font-rubik">
                 <span className="text-3xl font-bold">85</span>
@@ -69,12 +77,13 @@ export default function About() {
                   Shops
                 </p>
               </div>
-            </div>
+            </div> */}
+
           </div>
-        </div>{" "}
-      </div>{" "}
+        </div>
+      </div>
       <Feature />
-      <div
+      {/* <div
         className="px-8 w-full text-white  bg-[rgb(45,45,45)] items-center lg:items-start justify-center py-10 lg:py-20 flex flex-col lg:flex-row gap-4 lg:gap-10 bg-blend-overlay text-center"
         style={{
           backgroundImage: `url(${bgBanner})`,
@@ -88,7 +97,8 @@ export default function About() {
           <FaPhoneAlt />
           +91-8668006976
         </span>
-      </div>
+      </div> */}
+      <FooterBanner />
     </div>
   );
 }

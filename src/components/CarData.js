@@ -20,6 +20,7 @@ export const CAR_DATA = [
       fuel: "Diesel",
     },
   ],
+
   [
     {
       name: "Audi A1 S-Line",
@@ -34,6 +35,7 @@ export const CAR_DATA = [
       fuel: "Gasoline",
     },
   ],
+
   [
     {
       name: "Toyota Camry",
@@ -48,6 +50,7 @@ export const CAR_DATA = [
       fuel: "Hybrid",
     },
   ],
+
   [
     {
       name: "BMW 320 ModernLine",
@@ -62,6 +65,7 @@ export const CAR_DATA = [
       fuel: "Diesel",
     },
   ],
+
   [
     {
       name: "Mercedes-Benz GLK",
@@ -76,6 +80,7 @@ export const CAR_DATA = [
       fuel: "Diesel",
     },
   ],
+  
   [
     {
       name: "VW Passat CC",

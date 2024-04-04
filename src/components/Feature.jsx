@@ -9,7 +9,7 @@ export default function Feature() {
     <div className="flex flex-col justify-center items-center py-20 lg:gap-6 px-8 lg:px-40 lg:py-16 ">
       <p className="text-2xl font-semibold">Explore Surabhi Fencing Solutions
       </p>
-      <h2 className="text-[2.7rem] font-bold text-center">
+      <h2 className="text-[2.7rem] font-bold text-center" style={{ backgroundImage: '-webkit-linear-gradient(yellow, red)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
         Quick & easy installation
       </h2>
       <div className="flex flex-col lg:flex-row gap:10  mt-6">
