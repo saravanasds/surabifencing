@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaRegCircleCheck } from 'react-icons/fa6';
 import { FiArrowRightCircle } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 
 import Header from './Header';
 
@@ -41,9 +42,11 @@ export default function Hero() {
       <Header/>
       </div>
 
-      <div className="absolute inset-0 flex flex-col justify-end pb-20 lg:pb-10 items-center text-center ">
+      <div className="absolute inset-0 flex flex-col justify-end pb-3 md:pb-10 items-center text-center ">
+        
+        {/*  */}
         <div className="max-w-3xl mx-auto px-4 ">
-        <p className="text-2xl font-bold text-black" style={{ textShadow: '2px 2px 4px white' }}>
+        <p className="text-2xl lg:font-bold text-black" style={{ textShadow: '2px 2px 4px white' }}>
   Enhance your surroundings with
 </p>
 <h1 className="text-4xl lg:text-6xl font-bold text-white lg:mb-8" style={{ textShadow: '2px 2px 10px black' }}>
@@ -54,8 +57,8 @@ export default function Hero() {
 </p>
 
           <div className="flex justify-center items-center space-x-4">
-            <button className="font-rubik text-lg font-medium flex items-center gap-2 rounded py-4 px-8 bg-[#d13d3d] text-white shadow-custom hover:shadow-custom-hovered transition-all duration-300 ease-in-out">Gallery <FaRegCircleCheck /></button>
-            <button className="font-rubik text-lg font-medium flex items-center gap-2 rounded py-4 px-8 bg-black text-white hover:bg-white border-black hover:text-black transition-all duration-300 ease-in-out">Services <FiArrowRightCircle /></button>
+            <button className="font-rubik text-lg font-medium flex items-center gap-2 rounded py-2 px-4 lg:py-4 lg:px-8 bg-[#d13d3d] text-white shadow-custom hover:shadow-custom-hovered transition-all duration-300 ease-in-out">Gallery <FiArrowRightCircle /></button>
+            <button className="font-rubik text-lg font-medium flex items-center gap-2 rounded py-2 px-4 lg:py-4 lg:px-8 bg-black text-white hover:bg-white border-black hover:text-black transition-all duration-300 ease-in-out">Services <FiArrowRightCircle /></button>
           </div>
         </div>
       </div>

@@ -21,18 +21,18 @@ export default function Header() {
   }
 
   return (
-    <header className="w-full px-4 lg:px-20 pt-6 font-rubik bg-initial absolute bg-white bg-opacity-20 backdrop-blur-md backdrop-filter backdrop-blur-md p-4 rounded-md shadow-lg">
+    <header className="w-full px-8 lg:px-20 pt-6 font-rubik bg-initial absolute bg-white bg-opacity-20 backdrop-blur-md backdrop-filter backdrop-blur-md p-4 rounded-md shadow-lg">
       
       <nav className="flex justify-between items-center ">
 
         {/* logos */}
-        <div className="flex space-x-4">
+        <div className="flex justify-center items-center h-full space-x-4">
           <a href="/">
-            <img src={logo} className="w-36 cursor-pointer" alt="logo" />
+            <img src={logo} className="w-24 lg:w-36 cursor-pointer" alt="logo" />
           </a>
 
           <a href="/">
-            <img src={logo1} className="w-36 cursor-pointer" alt="logo" />
+            <img src={logo1} className="w-28 lg:w-32 cursor-pointer" alt="logo" />
           </a>
         </div>
 
@@ -60,7 +60,7 @@ export default function Header() {
           </ul>
         </div>
 
-
+        {/* toggle */}
         <div className="flex gap-6 items-center font-medium">
           <button
             type="button"
@@ -84,7 +84,7 @@ export default function Header() {
       >
         {(ref) => (
           <div ref={ref}
-            className="flex flex-col gap-6 w-3/4 h-[100vh] fixed top-0 left-0 lg:p-14 p-3 rounded-b-md bg-green-700 backdrop-blur-sm shadow-md lg:hidden text-center font-medium"
+            className="flex flex-col justify-between gap-6 w-3/4 h-[100vh] fixed top-0 left-0 lg:p-14 p-3 rounded-b-md bg-green-700 backdrop-blur-sm shadow-md lg:hidden text-center font-medium"
           >
             <div
               className="border rounded px-10 py-4 text-xl font-bold hover:text-[#30ff75] hover:bg-gray-800 hover:-translate-y-2 ease-in-out duration-300 cursor-pointer"
