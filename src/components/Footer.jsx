@@ -57,14 +57,14 @@ export default function Footer() {
         </div>
 
         {/* Working Hours */}
-        <div className="flex flex-col items-start gap-4 lg:items-start">
+        {/* <div className="flex flex-col items-start gap-4 lg:items-start">
           <h3 className="text-2xl font-extrabold uppercase text-[#FF4D30] " style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}>Working Hours</h3>
           <ul className="flex flex-col  gap-2 items-start font-rubik">
             <li><span className="font-bold"> Mon- Fri </span>: 9:00AM - 9:00PM</li>
             <li><span className="font-bold"> Sat </span>: 9:00AM - 19:00PM</li>
             <li><span className="font-bold"> Sun </span>: Closed</li>
           </ul>
-        </div>
+        </div> */}
 
         {/* Contact Details */}
         <div className="flex flex-col gap-4">
