@@ -11,6 +11,11 @@ import img7 from "../assets/fense-Gallery/fense7.jpeg";
 import img8 from "../assets/fense-Gallery/fense8.jpeg";
 import img9 from "../assets/fense-Gallery/fense9.jpeg";
 import img10 from "../assets/fense-Gallery/fense10.jpeg";
+
+import { IoLogoYoutube } from "react-icons/io";
+import { CiFacebook } from "react-icons/ci";
+import { FaInstagram } from "react-icons/fa";
+
 import Header from "../components/Header.jsx";
 
 export default function OurTeam() {
@@ -25,6 +30,7 @@ export default function OurTeam() {
     { key: 8, img: img8, name: "Caitlyn Hunt", role: "Manager" },
     { key: 9, img: img9, name: "Caitlyn Hunt", role: "Manager" },
     { key: 10, img: img10, name: "Caitlyn Hunt", role: "Manager" },
+    
   ];
   return (
     <div className="font-poppins w-full h-full relative">
@@ -59,9 +65,30 @@ export default function OurTeam() {
                 <h4 className="text-xl font-semibold">{team.name}</h4>
                 <h5>{team.role}</h5>
               </div> */}
+              
             </div>
           );
         })}
+      </div>
+
+        {/*  */}
+      <div className="bg-grey-600 ">
+        <div>Our Channel Links</div>
+          <div className="flex w-full">
+          <div className="w-1/2">
+          <iframe width="460" height="215" src="https://www.youtube.com/embed/FY6LXogAcaE?si=q5YVWtY5aaq1dcQO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
+          </div>
+          <div className="w-1/2 bg-slate-500">
+            <div>Our Social Media Links</div>
+            <div className=" flex item-center w-full">
+            <ul className="flex gap-10 items-center">
+              <li><IoLogoYoutube/></li>
+              <li><CiFacebook/></li>
+              <li><FaInstagram/></li>
+            </ul>
+            </div>
+          </div>
+      </div>
       </div>
       <FooterBanner />
     </div>
