@@ -9,14 +9,14 @@ import image1 from "../assets/fences/fence6.jpg";
 export default function Testimonial() {
 
   return (
-    <div className="w-full bg-[#f8f8f849] " >
-      <div className="flex flex-col justify-center items-center py-36 lg:gap-16 px-8 lg:px-40 lg:py-20 ">
+    <div className="w-full bg-[#64555549] " >
+      <div className="flex flex-col justify-center items-center pt-14 py-20 lg:gap-16 px-8 lg:px-40  ">
         <div className="flex flex-col gap-2 justify-center items-center text-center">
-          <h3 className="text-2xl font-medium font-rubik text-white">
+          <h3 className="text-2xl font-medium font-rubik text-black">
             Reviewed by People
           </h3>
-          <h2 className="text-[2.7rem] font-bold" style={{ backgroundImage: '-webkit-linear-gradient(yellow, red)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Client's Testimonials</h2>
-          <p className="text-white font-rubik px-10 lg:px-40 text-center">
+          <h2 className="text-[2.7rem] font-bold text-red-700" >Client's Testimonials</h2>
+          <p className="text-black font-rubik px-10 lg:px-40 text-center">
             Discover the positive impact we've made on the our clients by
             reading through their testimonials. Our clients have experienced our
             service and results, and they're eager to share their positive

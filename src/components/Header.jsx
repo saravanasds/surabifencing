@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
 import { Transition } from "@headlessui/react";
 import { FiMenu, FiX } from "react-icons/fi";
 
@@ -21,7 +22,7 @@ export default function Header() {
   }
 
   return (
-    <header className="w-full px-8 lg:px-20 pt-6 font-rubik bg-initial absolute bg-white bg-opacity-20 backdrop-blur-md backdrop-filter backdrop-blur-md p-4 rounded-md shadow-lg">
+    <header className="w-full px-8 lg:px-20 pt-6 font-rubik bg-initial absolute bg-black bg-opacity-20 backdrop-blur-md backdrop-filter backdrop-blur-md p-4 rounded-md shadow-lg">
       
       <nav className="flex justify-between items-center ">
 
@@ -38,27 +39,39 @@ export default function Header() {
 
         {/* navbar */}
         <div className="hidden lg:block font-medium"> 
-          <ul className="flex gap-6 items-center text-2xl ">
-            <li className="hover:text-[#FF4D30] ">
-              <Link to="/">Home</Link>
+          <ul className="flex gap-6 items-center text-lg font-bold">
+            <li className=" hover:text-[#6B231C] " style={{
+  textShadow: '1px 1px 2px white, -1px -1px 2px white, -1px 1px 2px white, 1px -1px 2px white'  
+}}
+>      <NavLink exact  to="/" activeClassName="text-[#ffd930]">Home</NavLink >
             </li>
-            <li className="hover:text-[#FF4D30]">
-              <Link to="/about">About</Link>
+            <li className="hover:text-[#6B231C]">
+              <NavLink  to="/about" activeClassName="text-[#ffd930]" style={{
+  textShadow: '1px 1px 2px white, -1px -1px 2px white, -1px 1px 2px white, 1px -1px 2px white'  
+}}>About</NavLink >
             </li>
-            <li className="hover:text-[#FF4D30]">
-              <Link to="/vehical-models">Products</Link>
+            <li className="hover:text-[#6B231C]">
+              <NavLink   to="/vehical-models" activeClassName="text-[#ffd930]" style={{
+  textShadow: '1px 1px 2px white, -1px -1px 2px white, -1px 1px 2px white, 1px -1px 2px white'  
+}}>Products</NavLink >
             </li>
-            <li className="hover:text-[#FF4D30]">
-              <Link to="/testimonials">Testimonials</Link>
+            <li className="hover:text-[#6B231C]">
+              <NavLink  to="/testimonials" activeClassName="text-[#ffd930]" style={{
+  textShadow: '1px 1px 2px white, -1px -1px 2px white, -1px 1px 2px white, 1px -1px 2px white'  
+}}>Testimonials</NavLink >
             </li>
-            <li className="hover:text-[#FF4D30]">
-              <Link to="/our-team">Gallery</Link>
+            <li className="hover:text-[#6B231C]">
+              <NavLink  to="/our-team" activeClassName="text-[#ffd930] " style={{
+  textShadow: '1px 1px 2px white, -1px -1px 2px white, -1px 1px 2px white, 1px -1px 2px white'  
+}}>Gallery</NavLink >
             </li>
-            <li className="hover:text-[#FF4D30]">
-              <Link to="/contact">Contact</Link>
-            </li>
+            {/* <li className="hover:text-[#ffd930]">
+              <NavLink  to="/contact" activeClassName="text-[#ffd930]">Contact</NavLink >
+            </li> */}
           </ul>
         </div>
+
+        <button className="bg-[#6B231C] text-white border-white hover:bg-[#FECC00] hidden lg:block hover:text-black duration-500 font-bold rounded px-8 py-2 "><NavLink  to="/contact" activeClassName="text-[#ffd930]">Contact</NavLink ></button>
 
         {/* toggle */}
         <div className="flex gap-6 items-center font-medium">
@@ -66,6 +79,7 @@ export default function Header() {
             type="button"
             onClick={toggleMenu}
             className="lg:hidden text-red-900 font-bold text-4xl cursor-pointer hover:text-yellow-500 pr-5 "
+            
           >
             {isMenuOpen ? <FiX /> : <FiMenu />}
           </button>
@@ -84,40 +98,40 @@ export default function Header() {
       >
         {(ref) => (
           <div ref={ref}
-            className="flex flex-col justify-between gap-6 w-3/4 h-[100vh] fixed top-0 left-0 lg:p-14 p-3 rounded-b-md bg-green-700 backdrop-blur-sm shadow-md lg:hidden text-center font-medium"
+            className="flex flex-col justify-between  w-3/4  fixed top-0 left-0 lg:p-14 p-3 rounded-b-md bg-[#e9e9e9] backdrop-blur-sm shadow-md lg:hidden text-center font-medium"
           >
             <div
-              className="border rounded px-10 py-4 text-xl font-bold hover:text-[#30ff75] hover:bg-gray-800 hover:-translate-y-2 ease-in-out duration-300 cursor-pointer"
-              onClick={handleLinkClick}
+              className="border rounded px-10 py-4 text-xl font-bold bg-gray-400 hover:text-[#30ff75] hover:bg-gray-800 hover:-translate-y-2 ease-in-out duration-300 cursor-pointer"
+              onClick={handleLinkClick} 
             >
               <Link to="/">Home</Link>
             </div>
             <div
-              className="border  rounded px-10 py-4 text-xl font-bold hover:text-[#30ff75] hover:bg-gray-800 hover:-translate-y-2 ease-in-out duration-300 cursor-pointer"
+              className="border  rounded px-10 py-4 text-xl bg-gray-400 font-bold hover:text-[#30ff75] hover:bg-gray-800 hover:-translate-y-2 ease-in-out duration-300 cursor-pointer"
               onClick={handleLinkClick}
             >
               <Link to="/about">About</Link>
             </div>
             <div
-              className="border  rounded px-10 py-4 text-xl font-bold hover:text-[#30ff75] hover:bg-gray-800 hover:-translate-y-2 ease-in-out duration-300 cursor-pointer"
+              className="border  rounded px-10 py-4 text-xl bg-gray-400 font-bold hover:text-[#30ff75] hover:bg-gray-800 hover:-translate-y-2 ease-in-out duration-300 cursor-pointer"
               onClick={handleLinkClick}
             >
               <Link to="/">Products</Link>
             </div>
             <div
-              className="border  rounded px-10 py-4 text-xl font-bold hover:text-[#30ff75] hover:bg-gray-800 hover:-translate-y-2 ease-in-out duration-300 cursor-pointer"
+              className="border  rounded px-10 py-4 text-xl bg-gray-400 font-bold hover:text-[#30ff75] hover:bg-gray-800 hover:-translate-y-2 ease-in-out duration-300 cursor-pointer"
               onClick={handleLinkClick}
             >
               <Link to="/testimonials">Testimonial</Link>
             </div>
             <div
-              className="border  rounded px-10 py-4 text-xl font-bold hover:text-[#30ff75] hover:bg-gray-800 hover:-translate-y-2 ease-in-out duration-300 cursor-pointer"
+              className="border  rounded px-10 py-4 text-xl bg-gray-400 font-bold hover:text-[#30ff75] hover:bg-gray-800 hover:-translate-y-2 ease-in-out duration-300 cursor-pointer"
               onClick={handleLinkClick}
             >
               <Link to="/">Gallery</Link>
             </div>
             <div
-              className="border rounded px-10 py-4 text-xl font-bold hover:text-[#30ff75] hover:bg-gray-800 hover:-translate-y-2 ease-in-out duration-300 cursor-pointer"
+              className="border rounded-lg px-10 py-4 text-xl bg-[#6B231C] text-white font-bold hover:text-[#30ff75] hover:bg-gray-800 hover:-translate-y-2 ease-in-out duration-300 cursor-pointer"
               onClick={handleLinkClick}
             >
               <Link to="/contact">Contact</Link>

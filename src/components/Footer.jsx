@@ -8,6 +8,7 @@ import { MdOutlineProductionQuantityLimits } from "react-icons/md";
 import { GoCodeReview } from "react-icons/go";
 import { MdOutlineLocalLibrary } from "react-icons/md";
 import { IoHomeOutline } from "react-icons/io5";
+import { MdOutlineContactSupport } from "react-icons/md";
 
 import logo from "../assets/home/logo2.png";
 import bgHome3 from '../assets/fences/fence3.jpg';
@@ -43,20 +44,21 @@ export default function Footer() {
 
         {/* Links */}
         <div className="flex flex-col gap-4 items-start lg:items-start">
-          <h3 className="text-2xl font-extrabold uppercase " style={{ backgroundImage: '-webkit-linear-gradient(yellow, red)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Our Other Links</h3>
+          <h3 className="text-2xl font-extrabold uppercase text-[#FF4D30] " style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}>Our Other Links</h3>
 
           <ul className="flex flex-col gap-2 text-xl font-rubik">
-            <li className="hover:text-[#eaff30] cursor-pointer"><Link to="/" onClick={scrollToTop}><div className="flex items-center gap-2">< IoHomeOutline />Home</div></Link></li>
-            <li className="hover:text-[#eaff30] cursor-pointer"><Link to="/about" onClick={scrollToTop}><div className="flex items-center gap-2">< MdOutlineLocalLibrary />About</div></Link></li>
-            <li className="hover:text-[#eaff30] cursor-pointer"><Link to="/vehical-models" onClick={scrollToTop}><div className="flex items-center gap-2">< MdOutlineProductionQuantityLimits />Products</div></Link></li>
-            <li className="hover:text-[#eaff30] cursor-pointer"><Link to="/our-team" onClick={scrollToTop}><div className="flex items-center gap-2">< GrGallery />Gallery</div></Link></li>
-            <li className="hover:text-[#eaff30] cursor-pointer"><Link to="/testimonials" onClick={scrollToTop}><div className="flex items-center gap-2">< GoCodeReview />Testimonial</div></Link></li>
+            <li className="hover:text-[#FF4D30] cursor-pointer"><Link to="/" onClick={scrollToTop}><div className="flex items-center gap-2">< IoHomeOutline />Home</div></Link></li>
+            <li className="hover:text-[#FF4D30] cursor-pointer"><Link to="/about" onClick={scrollToTop}><div className="flex items-center gap-2">< MdOutlineLocalLibrary />About</div></Link></li>
+            <li className="hover:text-[#FF4D30] cursor-pointer"><Link to="/vehical-models" onClick={scrollToTop}><div className="flex items-center gap-2">< MdOutlineProductionQuantityLimits />Products</div></Link></li>
+            <li className="hover:text-[#FF4D30] cursor-pointer"><Link to="/our-team" onClick={scrollToTop}><div className="flex items-center gap-2">< GrGallery />Gallery</div></Link></li>
+            <li className="hover:text-[#FF4D30] cursor-pointer"><Link to="/testimonials" onClick={scrollToTop}><div className="flex items-center gap-2">< GoCodeReview />Testimonial</div></Link></li>
+            <li className="hover:text-[#FF4D30] cursor-pointer"><Link to="/contact" onClick={scrollToTop}><div className="flex items-center gap-2">< MdOutlineContactSupport />Contact us</div></Link></li>
           </ul>
         </div>
 
         {/* Working Hours */}
         <div className="flex flex-col items-start gap-4 lg:items-start">
-          <h3 className="text-2xl font-extrabold uppercase " style={{ backgroundImage: '-webkit-linear-gradient(yellow, red)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Working Hours</h3>
+          <h3 className="text-2xl font-extrabold uppercase text-[#FF4D30] " style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}>Working Hours</h3>
           <ul className="flex flex-col  gap-2 items-start font-rubik">
             <li><span className="font-bold"> Mon- Fri </span>: 9:00AM - 9:00PM</li>
             <li><span className="font-bold"> Sat </span>: 9:00AM - 19:00PM</li>
@@ -66,18 +68,18 @@ export default function Footer() {
 
         {/* Contact Details */}
         <div className="flex flex-col gap-4">
-          <h3 className="text-2xl font-extrabold uppercase " style={{ backgroundImage: '-webkit-linear-gradient(yellow, red)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Further Enquiry</h3>
+          <h3 className="text-2xl font-extrabold uppercase text-[#FF4D30] " style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }} >Further Enquiry</h3>
           <a href="/" className="flex items-center gap-2 ">
             <div className="flex flex-col gap-2">
-            <div className="flex items-center gap-2 hover:text-[#eaff30]">
+            <div className="flex items-center gap-2 hover:text-[#FF4D30]">
             <FaPhoneAlt/><p>+91-8668006976</p>
             </div>
-            <div className="flex items-center gap-2 hover:text-[#eaff30]">
+            <div className="flex items-center gap-2 hover:text-[#FF4D30]">
             <FaPhoneAlt/><p>+91-9042506976</p>
             </div>
             </div>
           </a>
-          <a href="/" className="flex items-center gap-2 hover:text-[#eaff30]">
+          <a href="/" className="flex items-center gap-2 hover:text-[#FF4D30]">
             <MdEmail />
             <p>contact@Surabhifencing.com</p>
           </a>
@@ -87,7 +89,7 @@ export default function Footer() {
             type="text"
             placeholder="Enter Email Address"
           />
-          <button className="w-full rounded py-3 px-6 bg-[#eaff30] text-black uppercase font-extrabold tracking-wider shadow-custom hover:shadow-custom-hovered transition-all duration-300 ease-in-out">
+          <button className="w-full rounded py-3 px-6 bg-[#FF4D30] hover:bg-red-400 text-black uppercase font-extrabold tracking-wider shadow-custom hover:shadow-custom-hovered transition-all duration-300 ease-in-out">
             Submit
           </button>
         </div>
@@ -95,11 +97,10 @@ export default function Footer() {
       <div className="flex justify-center items-center text center opacity-20 pt-10">
         <p>❤️ ak</p>
       </div>
-      {/* <div className="bg-black text-white font-bold w-full">
-        <span>Copyright 2024
-          < FaRegCopyright/>
-          Surabhi Fencing</span>
+      {/* <div className="flex flex-row justify-center items-center text-black font-bold w-full pt-5">
+        <span className="flex items-center gap-2">Copyright 2024<div className="flex items-center gap-2 text-red-800">< FaRegCopyright/>Surabhi Fencing</div></span>
       </div> */}
+      <div className="text-black font-bold w-full pt-5">Copyright 2024 <span>&#169;</span><span className="text-red-900"> Surabhi</span> Fencing</div>
     </div>
   );
 }

@@ -40,7 +40,7 @@ export default function OurTeam() {
         <div className=" z-20"><Header/></div>
       <div className="flex lg:flex-row px-8 lg:px-20 py-40 text-black  z-10">
         <div>
-          <h2 className="text-3xl font-bold pt-9" style={{ backgroundImage: '-webkit-linear-gradient(yellow, red)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Gallery</h2>
+          <h2 className="text-3xl font-bold pt-9" >Gallery</h2>
           <h3 className="text-lg font-semibold">Home/ Gallery</h3>
         </div>
       </div>

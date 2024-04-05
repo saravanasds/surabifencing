@@ -18,7 +18,7 @@ export default function Testimonials() {
         <div className=" z-20"><Header/></div>
       <div className="flex lg:flex-row px-8 lg:px-20 py-40 text-black  z-10">
         <div>
-          <h2 className="text-3xl font-bold pt-9" style={{ backgroundImage: '-webkit-linear-gradient(yellow, red)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Testimonials</h2>
+          <h2 className="text-3xl font-bold pt-9" >Testimonials</h2>
           <h3 className="text-lg font-semibold">Home/ Testimonials</h3>
         </div>
       </div>

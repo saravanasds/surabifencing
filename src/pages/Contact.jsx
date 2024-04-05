@@ -22,7 +22,7 @@ export default function Contact() {
         <div className=" z-20"><Header/></div>
       <div className="flex lg:flex-row px-8 lg:px-20 py-40 text-black  z-10">
         <div>
-          <h2 className="text-3xl font-bold pt-9" style={{ backgroundImage: '-webkit-linear-gradient(yellow, red)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Contact us</h2>
+          <h2 className="text-3xl font-bold pt-9" >Contact us</h2>
           <h3 className="text-lg font-semibold">Home/ Contact us</h3>
         </div>
       </div>
@@ -35,8 +35,8 @@ export default function Contact() {
         }}
       >
         <div className="lg:w-[50%] w-full  flex flex-col gap-10 lg:text-left text-center">
-          <h3 className="text-[2.7rem] font-bold" style={{ backgroundImage: '-webkit-linear-gradient(yellow, red)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
-            Need additional information?
+          <h3 className="text-[2.7rem] font-bold text-[#FECC00]" >
+            Get More..?
           </h3>
           <p className="text-black font-rubik text-center lg:text-left pr:0 lg:pr-52">
             An all-around expert in Surabhi Fencing, skilled in research, development, and specialized know-how. With a solid background, we bring over 15 years of experience.
