@@ -31,7 +31,7 @@ export default function Footer() {
       width: '100%',
       backgroundColor: 'rgba(0, 0, 0, 0.1)',
     }}>
-      <div className="flex lg:gap-4 gap-10 lg:flex-row flex-col justify-between lg:items-start items-center text-center lg:text-left">
+      <div className="flex lg:gap-4 gap-10 lg:flex-row flex-col justify-around lg:items-start items-center text-center lg:text-left">
         <div className="flex flex-col gap-4 items-center lg:items-start">
           <Link to="/" onClick={scrollToTop}>
             <img src={logo} className="w-36 cursor-pointer" alt="logo" />
@@ -100,7 +100,7 @@ export default function Footer() {
       {/* <div className="flex flex-row justify-center items-center text-black font-bold w-full pt-5">
         <span className="flex items-center gap-2">Copyright 2024<div className="flex items-center gap-2 text-red-800">< FaRegCopyright/>Surabhi Fencing</div></span>
       </div> */}
-      <div className="text-black font-bold w-full pt-5">Copyright 2024 <span>&#169;</span><span className="text-red-900"> Surabhi</span> Fencing</div>
+      <div className="text-black font-bold w-full text-center pt-5">Copyright 2024 <span>&#169;</span><span className="text-red-900"> Surabhi</span> Fencing</div>
     </div>
   );
 }

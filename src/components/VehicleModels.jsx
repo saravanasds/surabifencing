@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { CAR_DATA } from "./CarData2.js";
+import "../index.css"
 
 import { FaIndianRupeeSign } from "react-icons/fa6";
 
@@ -53,12 +54,13 @@ export default function VehicleModels() {
           <img
             src={selectedCar.img}
             alt={selectedCar.name}
-            className="object-cover h-full w-full rounded-md border-4 border-white "
+            className="object-cover w-full rounded-md border-4 border-white h-full transition-transform duration-300 transform hover:scale-105 "
+            style={{}}
           />
         )}
       </div>
       
-      <div className="text-sm text-center w-full h-full border-b bg-white border-black lg:w-[20%] overflow-scroll">
+      <div className="text-sm text-center w-full h-full border-b bg-white border-black lg:w-[20%] overflow-y-scroll custom-scrollbar" >
         {selectedCar && (
           <div className="flex flex-col justify-between text-center ">
             <div className="flex bg-[#FF4D30] text-white items-center justify-center py-4">

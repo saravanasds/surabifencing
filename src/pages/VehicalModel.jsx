@@ -40,7 +40,7 @@ export default function VehicalModel() {
             <div key={index} className="flex items-start">
   {carGroup.map((car) => (
     <div key={car.name} className="flex w-[300px] flex-col overflow-hidden border rounded-lg p-4 mb-4 mr-4">
-      <div className="relative h-52 overflow-hidden mb-4">
+      <div className="relative h-52 overflow-hidden mb-4 transition-transform duration-300 transform hover:scale-105 hover:rounded">
         <img src={car.img} alt="" className="object-cover w-full h-full" />
       </div>
 

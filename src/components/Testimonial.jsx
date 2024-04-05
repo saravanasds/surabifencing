@@ -9,7 +9,7 @@ import image1 from "../assets/fences/fence6.jpg";
 export default function Testimonial() {
 
   return (
-    <div className="w-full bg-[#64555549] " >
+    <div className="w-full bg-[#FAFAFA] " >
       <div className="flex flex-col justify-center items-center pt-14 py-20 lg:gap-16 px-8 lg:px-40  ">
         <div className="flex flex-col gap-2 justify-center items-center text-center">
           <h3 className="text-2xl font-medium font-rubik text-black">

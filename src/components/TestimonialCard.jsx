@@ -2,7 +2,7 @@ import React from "react";
 
 export default function TestimonialCard(props) {
   return (
-    <div className="bg-red-300 rounded-md flex flex-col gap-10 shadow-lg p-12 w-full lg:max-w-[400px] hover:-translate-y-3 ease-in-out duration-200 transition-all">
+    <div className="bg-[#FFEDEA] rounded-md flex flex-col gap-10 shadow shadow-black p-12 w-full lg:max-w-[400px] hover:-translate-y-3 ease-in-out duration-200 transition-all">
       <div className="">
         <p className="text-xl font-medium overflow-hidden text-gray-800">{props.content}</p>{" "}
       </div>
@@ -11,7 +11,7 @@ export default function TestimonialCard(props) {
         <div className="flex flex-col flex-grow ml-4">
           <div className="flex justify-between items-center">
             <div className="flex flex-col">
-              <span className="text-lg font-bold">{props.name}</span>
+              <span className="text-lg text-red-700 font-bold">{props.name}</span>
               <span className="font-rubik">{props.city}</span>
             </div>
           </div>
