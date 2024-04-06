@@ -28,13 +28,13 @@ export default function Header() {
       <nav className="flex justify-between items-center ">
 
         {/* logos */}
-        <div className="flex justify-center items-center h-full space-x-4">
+        <div className="flex justify-center  rounded-lg items-center h-full space-x-4">
           <a href="/">
-            <img src={logo} className="w-24 lg:w-36 cursor-pointer" alt="logo" />
+            <img src={logo} className="w-24 lg:w-24 cursor-pointer" alt="logo" />
           </a>
 
           <a href="/">
-            <img src={logo1} className="w-28 lg:w-32 cursor-pointer" alt="logo" />
+            <img src={logo1} className="w-28 lg:w-36 px-2 cursor-pointer" alt="logo" />
           </a>
         </div>
 
