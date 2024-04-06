@@ -14,7 +14,7 @@ import img10 from "../assets/fense-Gallery/fense10.jpeg";
 
 // import vdo from "../assets/fences/video1.mp4"
 
-import { IoLogoYoutube } from "react-icons/io";
+import { ImYoutube2 } from "react-icons/im";
 import { CiFacebook } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa";
 
@@ -88,7 +88,7 @@ export default function OurTeam() {
 
         {/*  */}
       <div className=" p-10 w-full bg-[#FFEDEA]">
-        <div className="text-[2.7rem] font-bold text-red-700 underline">Our Channel Links</div>
+        <div className="text-3xl font-bold text-red-700 underline">Our Channel Links</div>
 
         <div className=" mt-5 flex flex-col lg:flex-row md:flex-row">
           <div className="lg:w-1/2 md:w-1/2 p-10 h-[300px] container">
@@ -97,12 +97,12 @@ export default function OurTeam() {
 
           <div className="lg:w-1/2 md:w-1/2 bg-white shadow-black shadow-md  rounded-lg">
           <div className="flex justify-center items-center h-full ">
-      <div className=" text-5xl  font-bold text-center text-red-500 italic pt-5" >
+      <div className=" text-4xl  font-bold text-center text-red-500 italic pt-5" >
         For more Videos, Visit..
-        <p className="text-4xl pt-10 text-black"><a href="https://www.youtube.com/@sivakumarsiva2456" target="blank"><IoLogoYoutube className="inline font-bold hover:-translate-y-1 ease-in-out duration-200 transition-all text-red-600"/> </a><span>Surabhi Fensing</span></p>
+        <p className="text-4xl pt-10 text-black"><a href="https://www.youtube.com/@sivakumarsiva2456" target="blank"><ImYoutube2 className="inline text-5xl font-bold hover:-translate-y-1 ease-in-out duration-200 transition-all text-red-600"/> <span title="Click Here">Surabhi Fensing</span></a></p>
      
       <ul className="flex gap-10 justify-center pt-8 bottom-0">
-              <li><a href="https://www.youtube.com/@sivakumarsiva2456" target="blank" className="text-red-600 text-xl"><IoLogoYoutube/></a></li>
+              <li><a href="https://www.youtube.com/@sivakumarsiva2456" target="blank"  className="text-red-600 text-xl"><ImYoutube2/></a></li>
               <li><a className="text-blue-600 text-xl"><CiFacebook/></a></li>
               <li><a className="text-xl"><FaInstagram/></a></li>
             </ul>
