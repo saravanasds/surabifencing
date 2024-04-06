@@ -64,7 +64,7 @@ export default function Hero() {
   </p>
 </div>
 
-          <div className="flex justify-center items-center pb-10 space-x-4">
+          <div className="flex justify-center items-center pb-20 lg:pb-10 space-x-4">
             <Link to="/our-team" className="font-rubik text-lg font-medium flex items-center gap-2 rounded py-2 px-4 lg:py-4 lg:px-8 bg-[#d13d3d] text-white hover:bg-red-900 shadow-custom hover:shadow-custom-hovered transition-all duration-300 ease-in-out">
               Gallery <FiArrowRightCircle />
             </Link>

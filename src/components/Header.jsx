@@ -5,7 +5,8 @@ import { Transition } from "@headlessui/react";
 import { FiMenu, FiX } from "react-icons/fi";
 
 import logo from "../assets/home/logo.png";
-import logo1 from "../assets/home/logo1.png";
+import logo1 from "../assets/home/logo4.png";
+import logo2 from "../assets/home/logo 3.png";
 
 import "../index.css"
 
@@ -23,7 +24,7 @@ export default function Header() {
   }
 
   return (
-    <header className="w-full px-8 lg:px-20 pt-6 font-rubik bg-initial absolute bg-black bg-opacity-20 md:backdrop-blur-md backdrop-filter p-4 rounded-md shadow-lg">
+    <header className="w-full px-8 lg:px-20 pt-6 font-rubik bg-initial absolute bg-white bg-opacity-20 md:backdrop-blur-md backdrop-filter p-4 rounded-md shadow-lg">
       
       <nav className="flex justify-between items-center ">
 
@@ -34,7 +35,7 @@ export default function Header() {
           </a>
 
           <a href="/">
-            <img src={logo1} className="w-28 lg:w-36 px-2 cursor-pointer" alt="logo" />
+            <img src={logo1} className="w-36 lg:w-36 px-2 cursor-pointer" alt="logo" />
           </a>
         </div>
 
