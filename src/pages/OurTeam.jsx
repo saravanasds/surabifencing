@@ -12,6 +12,8 @@ import img8 from "../assets/fense-Gallery/fense8.jpeg";
 import img9 from "../assets/fense-Gallery/fense9.jpeg";
 import img10 from "../assets/fense-Gallery/fense10.jpeg";
 
+// import vdo from "../assets/fences/video1.mp4"
+
 import { IoLogoYoutube } from "react-icons/io";
 import { CiFacebook } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa";
@@ -32,6 +34,9 @@ export default function OurTeam() {
     { key: 10, img: img10, name: "Caitlyn Hunt", role: "Manager" },
     
   ];
+
+  // const video =[{ key: 1, vdo },]
+
   return (
     <div className="font-poppins w-full h-full relative">
       <div
@@ -65,18 +70,60 @@ export default function OurTeam() {
                 <h4 className="text-xl font-semibold">{team.name}</h4>
                 <h5>{team.role}</h5>
               </div> */}
-              
             </div>
           );
         })}
       </div>
+      <hr />
+
+      {/* <div>
+        {video.map((vid)=>{
+          return (
+            <div key={video.key}>
+              <video src={vid}></video>
+            </div>
+          )
+        })}
+      </div> */}
 
         {/*  */}
-      <div className="bg-grey-600 ">
-        <div>Our Channel Links</div>
-          <div className="flex w-full">
+      <div className=" p-10 w-full bg-[#FFEDEA]">
+        <div className="text-[2.7rem] font-bold text-red-700 underline">Our Channel Links</div>
+
+        <div className=" mt-5 flex flex-col lg:flex-row md:flex-row">
+          <div className="lg:w-1/2 md:w-1/2 p-10 h-[300px] container">
+          <iframe   src="https://www.youtube.com/embed/FY6LXogAcaE?si=q5YVWtY5aaq1dcQO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen className="flex justify-center items-center h-full w-full rounded-xl shadow " ></iframe>
+          </div>
+
+          <div className="lg:w-1/2 md:w-1/2 bg-white shadow-black shadow-md  rounded-lg">
+          <div className="flex justify-center items-center h-full ">
+      <div className=" text-5xl  font-bold text-center text-red-500 italic pt-5" >
+        For more Videos, Visit..
+        <p className="text-4xl pt-10 text-black"><a href="https://www.youtube.com/@sivakumarsiva2456" target="blank"><IoLogoYoutube className="inline font-bold hover:-translate-y-1 ease-in-out duration-200 transition-all text-red-600"/> </a><span>Surabhi Fensing</span></p>
+     
+      <ul className="flex gap-10 justify-center pt-8 bottom-0">
+              <li><a href="https://www.youtube.com/@sivakumarsiva2456" target="blank" className="text-red-600 text-xl"><IoLogoYoutube/></a></li>
+              <li><a className="text-blue-600 text-xl"><CiFacebook/></a></li>
+              <li><a className="text-xl"><FaInstagram/></a></li>
+            </ul>
+            </div>
+    </div>
+    
+          </div>
+        </div>
+          
+      </div>
+      <FooterBanner />
+    </div>
+  );
+}
+
+
+//width="460" height="215"
+
+{/* <div className="flex w-full">
           <div className="w-1/2">
-          <iframe width="460" height="215" src="https://www.youtube.com/embed/FY6LXogAcaE?si=q5YVWtY5aaq1dcQO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
+          <iframe  src="https://www.youtube.com/embed/FY6LXogAcaE?si=q5YVWtY5aaq1dcQO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
           </div>
           <div className="w-1/2 bg-slate-500">
             <div>Our Social Media Links</div>
@@ -88,9 +135,4 @@ export default function OurTeam() {
             </ul>
             </div>
           </div>
-      </div>
-      </div>
-      <FooterBanner />
-    </div>
-  );
-}
+      </div> */}

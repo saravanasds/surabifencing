@@ -12,7 +12,12 @@ import { MdOutlineContactSupport } from "react-icons/md";
 
 import logo from "../assets/home/logo2.png";
 import bgHome3 from '../assets/fences/fence3.jpg';
-import { FaRegCopyright } from "react-icons/fa";
+// import { FaRegCopyright } from "react-icons/fa";
+
+
+import { IoLogoYoutube } from "react-icons/io";
+import { CiFacebook } from "react-icons/ci";
+import { FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
 
@@ -53,6 +58,11 @@ export default function Footer() {
             <li className="hover:text-[#FF4D30] cursor-pointer"><Link to="/our-team" onClick={scrollToTop}><div className="flex items-center gap-2">< GrGallery />Gallery</div></Link></li>
             <li className="hover:text-[#FF4D30] cursor-pointer"><Link to="/testimonials" onClick={scrollToTop}><div className="flex items-center gap-2">< GoCodeReview />Testimonial</div></Link></li>
             <li className="hover:text-[#FF4D30] cursor-pointer"><Link to="/contact" onClick={scrollToTop}><div className="flex items-center gap-2">< MdOutlineContactSupport />Contact us</div></Link></li>
+            <ul className="flex justify-between pt-5">
+              <li><a href="https://www.youtube.com/@sivakumarsiva2456" target="blank" className="text-red-600 text-2xl"><IoLogoYoutube/></a></li>
+              <li><a className="text-blue-600 text-2xl"><CiFacebook/></a></li>
+              <li><a className="text-2xl text-red-500"><FaInstagram/></a></li>
+            </ul>
           </ul>
         </div>
 
