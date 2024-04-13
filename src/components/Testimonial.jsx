@@ -1,5 +1,6 @@
 import React from "react";
 import TestimonialCard from "./TestimonialCard";
+import Slider from "react-slick"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import image1 from "../assets/fences/fence6.jpg";
@@ -26,19 +27,21 @@ export default function Testimonial() {
         <div className="flex lg:flex-row flex-col gap-10 pt-10 lg:pt-0">
           <TestimonialCard
             content='"We had an outstanding experience with Surabhi Fencing for our project. The rates offered were very reasonable, making the entire engagement highly satisfactory."'
-            name="Swarup"
-            city="Kolkata, India"
+            name="Suganya"
+            city="Tharapuram"
           />
           <TestimonialCard
             content='"The fencing materials from Surabhi Fencing were in excellent condition and significantly enhanced the overall aesthetics of our property."'
-            name="Arpita"
-            city="Bengaluru, India"
+            name="Ajith"
+            city="Oddanchatram"
           />
           <TestimonialCard
             content='"Our experience with Surabhi Fencing has been nothing short of exceptional, and we wholeheartedly recommend them for their top-notch materials and impeccable service."'
             name="Rani"
-            city="Hydrabad, India"
+            city="Palani"
           />
+          {/*  */}
+          
         </div>
 
       </div>

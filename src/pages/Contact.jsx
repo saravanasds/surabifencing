@@ -38,7 +38,7 @@ export default function Contact() {
           <h3 className="text-[2.7rem] font-bold text-[#FECC00]" >
             Get More..?
           </h3>
-          <p className="text-black font-rubik text-center lg:text-left pr:0 lg:pr-52">
+          <p className="text-white text-lg font-semibold font-rubik text-center lg:text-left pr:0 lg:pr-52">
             An all-around expert in Surabhi Fencing, skilled in research, development, and specialized know-how. With a solid background, we bring over 15 years of experience.
           </p>
           <div className="flex flex-col justify-center items-center lg:items-start lg:justify-start">
@@ -46,17 +46,31 @@ export default function Contact() {
               href="/"
               className="flex items-center gap-2 hover:text-[#FF4D30]"
             >
-              <FaPhoneAlt /> <p>+91-8668006976</p>
+              <FaPhoneAlt /> <p className="font-bold">+91-8668006976</p>
             </a>
             <a
               href="/"
               className="flex items-center gap-2 hover:text-[#FF4D30]"
             >
               <MdEmail />
-              <p>contact@Surabhifencing.com</p>
+              <p className="font-bold">contact@Surabhifencing.com</p>
             </a>
           </div>
+
+          <div className="bg-white h-[200px] rounded-xl">
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15691.740305831418!2d77.48774741297501!3d10.50577990738057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9dc57d449dde3%3A0x4608e26de5668a65!2sVilvathampatti%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1712909075676!5m2!1sen!2sin" 
+        className="h-full w-full rounded-xl"
+    style={{ border: '0' }} 
+    allowFullScreen="" 
+    loading="lazy" 
+    referrerPolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
         </div>
+
+
         <div className="lg:w-[40%] w-full">
           <form className="flex flex-col gap-4" action="">
             <div className="flex flex-col gap-2">

@@ -25,7 +25,7 @@ export default function VehicleModels() {
       Choose from a variety of our Products for your safety and for your welfare
       </p>
     </div>
-    <div className="flex flex-col lg:flex-row lg:justify-between lg:h-[450px] gap-10 justify-center lg:items-start items-center ">
+    <div className="flex flex-col lg:flex-row lg:justify-between lg:h-[450px] gap-10 justify-center lg:items-start items-center " >
       
       <div className="flex flex-col justify-between h-full ml-5 lg-full lg:w-[20%] w-full">
         {CAR_DATA.map((carGroup, index) => (
@@ -34,7 +34,8 @@ export default function VehicleModels() {
               <div
                 key={car.name}
                 onClick={() => handleClick(car)}
-                className={` hover:bg-[#FF4D30] cursor-pointer ${
+                id="selection"
+                className={` hover:bg-[#FF4D30] cursor-pointer  ${
                   selectedCar === car
                     ? "bg-[#FF4D30] text-white"
                     : "bg-[#e9e9e9] text-black"

@@ -9,6 +9,7 @@ import { GoCodeReview } from "react-icons/go";
 import { MdOutlineLocalLibrary } from "react-icons/md";
 import { IoHomeOutline } from "react-icons/io5";
 import { MdOutlineContactSupport } from "react-icons/md";
+import { IoLocationSharp } from "react-icons/io5";
 
 import logo from "../assets/home/logo2.png";
 import bgHome3 from '../assets/fences/fence3.jpg';
@@ -24,6 +25,13 @@ export default function Footer() {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
+      behavior: "smooth"
+    });
+  };
+
+  const scrollToElement = (element) => {
+    window.scrollTo({
+      top: element.offsetTop,
       behavior: "smooth"
     });
   };
@@ -81,27 +89,30 @@ export default function Footer() {
           <h3 className="text-2xl font-extrabold uppercase text-[#FF4D30] " style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }} >Further Enquiry</h3>
           <a href="/" className="flex items-center gap-2 ">
             <div className="flex flex-col gap-2">
-            <div className="flex items-center gap-2 hover:text-[#FF4D30]">
-            <FaPhoneAlt/><p>+91-8668006976</p>
+            <div className="flex items-center gap-2">
+            <FaPhoneAlt/><p className="text-xl">+91-8668006976</p>
             </div>
-            <div className="flex items-center gap-2 hover:text-[#FF4D30]">
-            <FaPhoneAlt/><p>+91-9042506976</p>
+            <div className="flex items-center gap-2 ">
+            <FaPhoneAlt/><p className="text-xl">+91-9042506976</p>
             </div>
             </div>
           </a>
-          <a href="/" className="flex items-center gap-2 hover:text-[#FF4D30]">
+          <a href="/" className="flex items-center gap-2 ">
             <MdEmail />
-            <p>contact@Surabhifencing.com</p>
+            <p className="text-lg">contact@Surabhifencing.com</p>
           </a>
           {/*  */}
-          <input
-            className="border rounded py-4 px-2 outline-none bg-[#f8f8f8]"
-            type="text"
-            placeholder="Enter Email Address"
-          />
-          <button className="w-full rounded py-3 px-6 bg-[#FF4D30] hover:bg-red-400 text-black uppercase font-extrabold tracking-wider shadow-custom hover:shadow-custom-hovered transition-all duration-300 ease-in-out">
-            Submit
-          </button>
+          <div className="text-xl font-rubik">
+              <Link to="/contact" onClick={() => scrollToElement(document.getElementById("sectionscoll"))} className="flex items-center font-bold gap-2 cursor-pointer ">
+              <IoLocationSharp/>
+                <p>Address</p>
+              </Link>
+              <div className=" pt-3">
+                  <p>180/3, Vilvathampatti,</p>
+                  <p>Puliampatti (PO)</p>
+                  <p>Palani - 624617</p>
+              </div>
+          </div>
         </div>
       </div>
       <div className="flex justify-center items-center text center opacity-20 pt-10">
@@ -110,7 +121,7 @@ export default function Footer() {
       {/* <div className="flex flex-row justify-center items-center text-black font-bold w-full pt-5">
         <span className="flex items-center gap-2">Copyright 2024<div className="flex items-center gap-2 text-red-800">< FaRegCopyright/>Surabhi Fencing</div></span>
       </div> */}
-      <div className="text-black font-bold w-full text-center pt-5">Copyright 2024 <span>&#169;</span><span className="text-red-900"> Surabhi</span> Fencing</div>
+      <div className="text-black font-bold w-full text-center pt-5">Copyright 2024 <span>&#169;</span><span className="text-red-900"> Surabhi</span> Fencing | Powered by <span className="text-red-900">SDS</span> Technologies</div>
     </div>
   );
 }

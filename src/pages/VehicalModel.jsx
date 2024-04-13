@@ -9,10 +9,30 @@ import { CAR_DATA } from "../components/CarData2.js";
 import FooterBanner from "../components/FooterBanner.jsx";
 import { FaIndianRupeeSign } from "react-icons/fa6";
 
+import LightGallery from 'lightgallery/react';
+
+import 'lightgallery/css/lightgallery.css';
+import 'lightgallery/css/lg-zoom.css';
+import 'lightgallery/css/lg-thumbnail.css';
+
+import lgThumbnail from 'lightgallery/plugins/thumbnail';
+import lgZoom from 'lightgallery/plugins/zoom';
+
 import { Link } from "react-router-dom";
 import Header from "../components/Header.jsx";
 
 export default function VehicalModel() {
+
+  const scrollToElement = (element) => {
+    window.scrollTo({
+      top: element.offsetTop,
+      behavior: "smooth"
+    });
+  };
+  const onInit = () => {
+    console.log('lightGallery has been initialized');
+};
+
   return (
     <div className="font-poppins w-full h-full relative">
       {/* header */}
@@ -39,20 +59,27 @@ export default function VehicalModel() {
           return (
             <div key={index} className="flex items-start">
   {carGroup.map((car) => (
-    <div key={car.name} className="flex w-[300px] flex-col overflow-hidden border rounded-lg p-4 mb-4 mr-4">
-      <div className="relative h-52 overflow-hidden mb-4 transition-transform duration-300 transform hover:scale-105 hover:rounded">
-        <img src={car.img} alt="" className="object-cover w-full h-full" />
+    <div key={car.name} className="flex w-[300px] h-[300px] flex-col overflow-hidden border rounded-lg p-4 mb-4 mr-4">
+      <div className="relative h-[80%] bg-black  transition-transform duration-300 transform hover:scale-105 hover:rounded">
+
+      <LightGallery
+                onInit={onInit}
+                speed={500}
+                plugins={[lgThumbnail, lgZoom]}
+            >
+
+        <img src={car.img} alt="" className="object-cover bg-center overflow-hidden w-full h-full cursor-pointer" />
+        </LightGallery>
       </div>
 
-      <div className="flex justify-between border-b pb-4">
+      {/* <div className="flex justify-between border-b pb-4">
       <div className="flex gap-2 items-center justify-around">
-                          <div className="font-bold">{car.name}</div>
-                          <div className="flex items-center justify-between"><FaIndianRupeeSign/>{car.price}</div>
+                          
                         </div>
-      </div>
+      </div> */}
       
-      <button type="button" className="font-rubik text-lg font-medium rounded mt-4 py-3 px-3 bg-[#FF4D30] hover:bg-[#ff4c3081] text-white hover:text-black shadow-custom hover:shadow-custom-hovered transition-all duration-300 ease-in-out">
-        <Link to="/#product-section">{car.name}</Link>
+      <button type="button" className="font-rubik text-lg font-medium rounded mt-4 py-3 px-3 h-[20%] bg-[#FF4D30] hover:bg-[#ff4c3081] text-white hover:text-black shadow-custom hover:shadow-custom-hovered transition-all duration-300 ease-in-out">
+        <Link  onClick={() => scrollToElement(document.getElementById("selection"))} >{car.name}</Link>
       </button>
     </div>
   ))}

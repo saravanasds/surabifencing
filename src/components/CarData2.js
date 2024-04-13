@@ -59,7 +59,7 @@ export const CAR_DATA = [
   
   [
     {
-      name: "Plastic Fence",
+      name: "Poultry Fence",
       price: "---",
       img: fence6,
       des: "Plastic fencing are made from plastic polymers rather than metal, or wire, plastic fencing is a versatile, durable, and low-maintenance fencing option suitable for residential, commercial, agricultural, or industrial purposes. Unlike wood fences that require regular staining or painting, plastic fences need minimal maintenance. They can be easily cleaned with soap and water, saving you time and effort. Plastic fences are designed for easy installation, making them a popular choice for DIY enthusiasts."
