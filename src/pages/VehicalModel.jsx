@@ -59,8 +59,10 @@ export default function VehicalModel() {
           return (
             <div key={index} className="flex items-start">
   {carGroup.map((car) => (
-    <div key={car.name} className="flex w-[300px] h-[300px] flex-col overflow-hidden border rounded-lg p-4 mb-4 mr-4">
-      <div className="relative h-[80%] bg-black  transition-transform duration-300 transform hover:scale-105 hover:rounded">
+    <div key={car.name} className="flex flex-col border rounded-lg p-4 mb-4 mr-4">
+      
+      
+      <div className="relative bg-black w-[300px] h-[300px] transition-transform duration-300 transform hover:scale-105 hover:rounded">
 
       <LightGallery
                 onInit={onInit}
@@ -68,9 +70,12 @@ export default function VehicalModel() {
                 plugins={[lgThumbnail, lgZoom]}
             >
 
-        <img src={car.img} alt="" className="object-cover bg-center overflow-hidden w-full h-full cursor-pointer" />
+        <img src={car.img} alt="" className=" absolute inset-0 w-full h-full object-cover cursor-pointer" />
         </LightGallery>
+        
       </div>
+
+
 
       {/* <div className="flex justify-between border-b pb-4">
       <div className="flex gap-2 items-center justify-around">

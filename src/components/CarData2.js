@@ -9,7 +9,7 @@ import fence2 from "../assets/fences/fence2.jpg"
 import fence3 from "../assets/fences/fence3.jpg"
 import fence4 from "../assets/fences/fence4.jpg"
 import fence5 from "../assets/fences/fence5.jpg"
-import fence6 from "../assets/fences/fence6.jpg"
+import fence7 from "../assets/fences/fence7.jpg"
 
 export const CAR_DATA = [
   [
@@ -61,8 +61,8 @@ export const CAR_DATA = [
     {
       name: "Poultry Fence",
       price: "---",
-      img: fence6,
-      des: "Plastic fencing are made from plastic polymers rather than metal, or wire, plastic fencing is a versatile, durable, and low-maintenance fencing option suitable for residential, commercial, agricultural, or industrial purposes. Unlike wood fences that require regular staining or painting, plastic fences need minimal maintenance. They can be easily cleaned with soap and water, saving you time and effort. Plastic fences are designed for easy installation, making them a popular choice for DIY enthusiasts."
+      img: fence7,
+      des: "Poultry fencing is often made from sturdy materials like galvanized steel, welded wire, or plastic-coated wire. Mesh sizes range from 1/2 inch to 2 inches,  heights range from 3 feet to 6 feet. Poultry fencing may come with additional features such as built-in gates  and anti-corrosion coatings for added durability."
     },
   ],
 ];

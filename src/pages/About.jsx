@@ -33,8 +33,8 @@ export default function About() {
       </div>
       
       <div className="flex gap-10 flex-col lg:flex-row items-center justify-center px-8 lg:px-20 pt-20 text-black bg-grey-100">
-        <div>
-          <img src={main} alt="" className="rounded-lg shadow-xl" />
+        <div className="rounded-3xl ">
+          <img src={main} alt="" className="rounded-3xl shadow-xl" />
         </div>
         <div className="flex flex-col lg:text-start text-center w-full lg:w-[40%]">
           <h3 className="text-2xl font-semibold" >About Surabhi Fencing</h3>

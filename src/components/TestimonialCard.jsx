@@ -2,7 +2,7 @@ import React from "react";
 
 export default function TestimonialCard(props) {
   return (
-    <div className="bg-[#FFEDEA] rounded-md flex flex-col gap-10 shadow shadow-black p-12 w-full lg:max-w-[400px] hover:-translate-y-3 ease-in-out duration-200 transition-all">
+    <div className="bg-[#FFEDEA] rounded-md flex flex-col gap-10 shadow shadow-black p-8 w-full lg:max-w-[400px] hover:-translate-y-3 ease-in-out duration-200 transition-all">
       <div className="">
         <p className="text-xl font-medium overflow-hidden text-gray-800">{props.content}</p>{" "}
       </div>

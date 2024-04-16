@@ -57,7 +57,7 @@ export default function Footer() {
 
         {/* Links */}
         <div className="flex flex-col gap-4 items-start lg:items-start">
-          <h3 className="text-2xl font-extrabold uppercase text-[#FF4D30] " style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}>Our Other Links</h3>
+          <h3 className="text-2xl font-extrabold uppercase text-[#FF4D30] " style={{ textShadow: '2px 2px 2px rgba(255,255,255, 0.8)' }}>Our Other Links</h3>
 
           <ul className="flex flex-col gap-2 text-xl font-rubik">
             <li className="hover:text-[#FF4D30] cursor-pointer"><Link to="/" onClick={scrollToTop}><div className="flex items-center gap-2">< IoHomeOutline />Home</div></Link></li>
@@ -86,7 +86,7 @@ export default function Footer() {
 
         {/* Contact Details */}
         <div className="flex flex-col gap-4">
-          <h3 className="text-2xl font-extrabold uppercase text-[#FF4D30] " style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }} >Further Enquiry</h3>
+          <h3 className="text-2xl font-extrabold uppercase text-[#FF4D30] " style={{ textShadow: '2px 2px 2px rgba(255,255,255, 0.8)' }} >Further Enquiry</h3>
           <a href="/" className="flex items-center gap-2 ">
             <div className="flex flex-col gap-2">
             <div className="flex items-center gap-2">
@@ -105,7 +105,7 @@ export default function Footer() {
           <div className="text-xl font-rubik">
               <Link to="/contact" onClick={() => scrollToElement(document.getElementById("sectionscoll"))} className="flex items-center font-bold gap-2 cursor-pointer ">
               <IoLocationSharp/>
-                <p>Address</p>
+                <p style={{ textShadow: '2px 2px 2px rgba(255,255,255, 0.8)' }}>Address</p>
               </Link>
               <div className=" pt-3">
                   <p>180/3, Vilvathampatti,</p>
